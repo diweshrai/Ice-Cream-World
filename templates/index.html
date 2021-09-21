@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+                <img src="/static/1.jpg" class="d-block w-100" alt="..."  width= "480" height= "350" >
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to the best Ice Cream of Rampur</h5>
+            <p>I know you eat icecreams but I know you have not eaten my icecream so please eat my icecrem</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+              <img src="/static/2.jpg" class="d-block w-100" alt="..."  width= "480" height= "350">
+
+        <div class="carousel-caption d-none d-md-block">
+            <h5>We serve love with our Ice Creams</h5>
+            <p>Harry's World Famous Best Ice creams.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="/static/3.jpg" class="d-block w-100" alt="..."  width= "480" height= "350">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Inaugarated by Donald Trump</h5>
+            <p>This ice cream shop was inaugrated by Honurable President trump</p>
+        </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+</div>
+
+
+<div class="container my-3">
+<h1 class="my-4 text-center">Select from our range of ice creams</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+        <img src="/static/4.jpg" class="d-block w-100" alt="..." width = "207.99" height = "255.99">
+            
+            <div class="card-body">
+              <p class="card-text">HARD ICE CREAM :This is the traditional type of ice cream which is made using milk, sweeteners, cream, eggs, sugar .</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                 <a href = "/hard" > <div class="btn btn-sm btn-outline-secondary" 
+
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                  {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+                </div>
+                {% comment %} <small class="text-muted">9 mins</small> {% endcomment %}
+              </div>
+              </a>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="/static/5.jpg" class="d-block w-100" alt="..." width = "207.99" height = "255.99">
+            <div class="card-body">
+              <p class="card-text">FRENCH ICE CREAMS:  These ice creams are made using custard base along with milk, cream, egg yolks, etc.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                   {% endcomment %}
+                   <a href = "/french" > <div class="btn btn-sm btn-outline-secondary" 
+                <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                
+                </div>
+                </a>
+                </div>
+                {% comment %} <small class="text-muted">9 mins</small> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="/static/6.jpg" class="d-block w-100" alt="..." width = "207.99" height = "255.99">
+            <div class="card-body">
+              <p class="card-text">LIGHT ICE CREAMS: These light ice creams are easy and convenient to digest for consumers of all age groups.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                 {% endcomment %}
+                <a href = "/light" > <div class="btn btn-sm btn-outline-secondary" 
+                <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                </div>
+                </a>
+
+                </div>
+                {% comment %} <small class="text-muted">9 mins</small> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+           <img src="/static/7.jpg" class="d-block w-100" alt="..." width = "207.99" height = "255.99">
+            <div class="card-body">
+              <p class="card-text">ORGANIC ICE CREAMS: This type of ice cream contains the ice cream names that are made using only the natural and organic ingredients.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                 {% endcomment %}
+                
+                <a href = "/organic" > <div class="btn btn-sm btn-outline-secondary" 
+                <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                
+
+                </div>
+                </a>
+                </div>
+                {% comment %} <small class="text-muted">9 mins</small> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+           <img src="/static/8.jpg" class="d-block w-100" alt="..."width = "207.99" height = "255.99">
+            <div class="card-body">
+              <p class="card-text">NO SUGAR ICE CREAMS: As the name indicates, these ice creams are made by either using artificial sweeteners or sugar substitutes</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                 {% endcomment %}
+                <a href = "/nosugar" > <div class="btn btn-sm btn-outline-secondary" 
+
+                <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                </div>
+                </a>
+
+
+                </div>
+                {% comment %} <small class="text-muted">9 mins</small> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+           <img src="/static/9.jpg" class="d-block w-100" alt="..." width = "207.99" height = "255.99">
+            <div class="card-body">
+              <p class="card-text">SOFT ICE CREAMS: These soft ice creams are prepared at higher temperatures than the regular ice creams.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                 {% endcomment %}
+             <a href = "/soft" > <div class="btn btn-sm btn-outline-secondary"   
+
+ <button type="button" class="btn btn-sm btn-outline-secondary" >Buy</button>
+              </div>
+              </a>  
+                
+{% comment %} <a href="#/product/1"><div class="card-title"><strong>Airpods Wireless Bluetooth Headphones</strong></div></a>
+                 {% endcomment %}
+                </div>
+                {% comment %} <small class="text-muted">9 mins</small> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+
+
+
+      </div>
+    </div>
+{% endblock body %}

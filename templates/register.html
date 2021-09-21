@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+<main class="py-3">
+    <div class="container">
+        <div class="container">
+            <div class="justify-content-md-center row">
+                <div class="col-md-6 col-12">
+                    <h1>Sign In</h1>
+                    <form class="">
+                        <div class="form-group"><label class="form-label" for="name">Name</label><input required=""
+                                placeholder="Enter your Full Name" type="name" id="name" class="form-control" value="">
+                        </div>
+                        <div class="form-group"><label class="form-label" for="email">Email Address</label><input
+                                required="" placeholder="Enter Email" type="email" id="email" class="form-control"
+                                value=""></div>
+                        <div class="form-group"><label class="form-label" for="password">Password</label><input
+                                required="" placeholder="Enter Password" type="password" id="password"
+                                class="form-control" value=""></div>
+                        <div class="form-group"><label class="form-label" for="passwordConfirm">Confirm
+                                Password</label><input required="" placeholder="Re-Enter Password" type="password"
+                                id="passwordConfirm" class="form-control" value=""></div><button type="submit"
+                            class="btn btn-primary">Register</button>
+                    </form>
+                    <div class="py-3 row">
+                        <div class="col">Have an Account ?<a href="/sign"> Sign In</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- <form method="POST" action="">
+    {{form}}
+
+
+
+</form> -->
+
+{% endblock body %}
+
+
+
